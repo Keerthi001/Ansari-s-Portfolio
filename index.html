@@ -460,7 +460,25 @@
 
   <!-- ======= End Contact Section ======= -->
 
+<script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function() {
+      emailjs.init("eUho4Rmpx1J13o0mdooK6");
+    })();
+  </script>
 
+<script type="text/javascript">
+  document.getElementById('contact-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+    
+    emailjs.sendForm('service_bfiha7h', 'template_u8znon9', this)
+      .then(function() {
+        alert('Your message has been sent!');
+      }, function(error) {
+        alert('Failed to send the message, please try again.');
+      });
+  });
+</script>
 
   <!-- Vendor JS Files -->
 
