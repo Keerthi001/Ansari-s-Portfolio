@@ -363,7 +363,7 @@
                </div>
             </div>
             <!-- modify this form HTML and place wherever you want your form -->
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form mt-4">
+            <form id="my-form" action="https://formspree.io/f/xeojglvo" method="POST" role="form" class="php-email-form mt-4">
         <div class="row">
           <div class="col-md-6 form-group">
             <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
@@ -378,12 +378,8 @@
         <div class="form-group mt-3">
           <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
         </div>
-        <div class="my-3">
-          <div class="loading">Loading</div>
-          <div class="error-message"></div>
-          <div class="sent-message">Your message has been sent. Thank you!</div>
-        </div>
-        <div class="text-center"><button type="submit">Send Message</button></div>
+        <button id="my-form-button">Submit</button>
+               <p id="my-form-status"></p>
       </form>
             <!-- Place this script at the end of the body tag -->
             <script>
