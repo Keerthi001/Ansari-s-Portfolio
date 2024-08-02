@@ -363,7 +363,7 @@
                </div>
             </div>
             <!-- modify this form HTML and place wherever you want your form -->
-           <form id="my-form" action="https://formspree.io/f/xeojglvo" method="POST">
+            <form id="my-form" action="https://formspree.io/f/xeojglvo" method="POST">
                 <div class="row">
                 <div class="form-group mt-3">
                 <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
@@ -377,8 +377,10 @@
                <div class="form-group mt-3">
                <input type="text" name="message" class="form-control" id="message" placeholder="Message" required/>
                </div>
-               <button id="my-form-button">Submit</button>
+                   <div class="text-center">
+               <button id="my-form-button" type="submit" class="text-center">Submit</button>
                <p id="my-form-status"></p>
+                   </div>
             </div>
             </form>
             <!-- Place this script at the end of the body tag -->
@@ -414,7 +416,6 @@
                }
                form.addEventListener("submit", handleSubmit)
             </script>
-
          </div>
       </section>
       <!-- ======= End Contact Section ======= -->
